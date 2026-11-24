@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KŌSEN 光線 — Neon Sushi Bar · Soho, London</title>
+  <meta name="description" content="KŌSEN Neon Sushi Bar en 42 Electric Lantern Alley, Soho, Londres. Cocina japonesa de vanguardia, 10 platos de autor y experiencia omakase bajo luces de neón." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient-glow ambient-glow--cyan" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow--magenta" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#inicio" class="brand" aria-label="KŌSEN Neon Sushi Inicio">
+        <span class="brand__kanji" aria-hidden="true">光線</span>
+        <span class="brand__text">
+          <strong>KŌSEN</strong>
+          <small>NEON SUSHI · SOHO</small>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#menu">Menú (10)</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#ubicacion">Londres</a>
+        <a href="#reservar">Reservar</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cart-btn" id="openCartBtn" type="button" aria-label="Abrir comanda">
+          <span class="cart-btn__icon" aria-hidden="true">🥢</span>
+          <span class="cart-btn__label">Comanda</span>
+          <span class="cart-btn__badge" id="cartCount">0</span>
+        </button>
+        <a href="#reservar" class="btn btn--neon-sm">Reservar</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg">
+        <img src="images/hero_neon_sushi.jpg" alt="Interior del restaurante japonés KŌSEN Neon Sushi en Soho, Londres" class="hero__img" />
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="container hero__content">
+        <div class="hero__vertical-sign" aria-hidden="true">
+          <span>光</span>
+          <span>線</span>
+          <span>寿</span>
+          <span>司</span>
+        </div>
+
+        <div class="hero__copy">
+          <p class="eyebrow">
+            <span class="pulse-dot"></span>
+            SOHO · 42 ELECTRIC LANTERN ALLEY · LONDON W1F 8NX
+          </p>
+          <h1 class="hero__title">
+            Sushi de alta precisión bajo <span class="text-gradient">luces de neón</span>
+          </h1>
+          <p class="hero__subtitle">
+            Una barra clandestina donde la tradición omakase de Tokio se encuentra con el pulso nocturno de Soho. Diez creaciones imaginarias elaboradas al momento con fuego, yuzu, trufa y pesca de línea.
+          </p>
+
+          <div class="hero__cta">
+            <a href="#menu" class="btn btn--primary">Explorar los 10 platos</a>
+            <a href="#reservar" class="btn btn--ghost">Reservar barra omakase</a>
+          </div>
+
+          <div class="hero__stats">
+            <div class="stat">
+              <strong>10</strong>
+              <span>Platos de autor</span>
+            </div>
+            <div class="stat">
+              <strong>18:00–01:30</strong>
+              <span>Cocina nocturna</span>
+            </div>
+            <div class="stat">
+              <strong>W1F 8NX</strong>
+              <span>Soho, Londres</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experiencia">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">LA EXPERIENCIA KŌSEN</span>
+          <h2>Tokio 2099 en el corazón de Londres</h2>
+          <p>Madera hinoki carbonizada, luz cian y magenta reflejada en pizarra volcánica y un equipo de itamaes trabajando frente a ti.</p>
+        </div>
+
+        <div class="pillars-grid">
+          <article class="pillar-card">
+            <span class="pillar-card__num">01</span>
+            <h3>Arroz Akazu &amp; Fuego</h3>
+            <p>Sazonamos nuestro arroz Koshihikari con vinagre rojo fermentado de tres años y sellamos cortes nobles al soplete frente al comensal.</p>
+          </article>
+          <article class="pillar-card">
+            <span class="pillar-card__num">02</span>
+            <h3>Soho After-Dark</h3>
+            <p>Vinilos synth-jazz japoneses, iluminación neón regulada y una barra íntima de solo 16 plazas oculta tras una puerta corredera.</p>
+          </article>
+          <article class="pillar-card">
+            <span class="pillar-card__num">03</span>
+            <h3>Maridaje Sake &amp; Yuzu</h3>
+            <p>Cada uno de nuestros 10 platos incluye sugerencia de sake Junmai Daiginjo o cóctel de autor con destilados botánicos japoneses.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-header section-header--split">
+          <div>
+            <span class="section-tag">MENÚ IMAGINARIO · CARTA DE NOCHE</span>
+            <h2>Los 10 Platos de Autor</h2>
+            <p>Haz clic en cualquier plato para ver ingredientes, alérgenos y maridaje recomendado, o añádelo directamente a tu comanda.</p>
+          </div>
+          <div class="menu-search">
+            <input type="search" id="menuSearch" placeholder="Buscar atún, trufa, ramen, matcha..." aria-label="Buscar plato en el menú" />
+          </div>
+        </div>
+
+        <div class="filter-bar" id="filterBar" role="tablist" aria-label="Filtrar platos por categoría">
+          <button class="filter-pill is-active" data-category="Todos" type="button">Todos (10)</button>
+          <button class="filter-pill" data-category="Maki & Rolls" type="button">Maki &amp; Rolls</button>
+          <button class="filter-pill" data-category="Nigiri" type="button">Nigiri</button>
+          <button class="filter-pill" data-category="Sashimi" type="button">Sashimi</button>
+          <button class="filter-pill" data-category="Platos Calientes" type="button">Platos Calientes</button>
+          <button class="filter-pill" data-category="Postres" type="button">Postres</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid" aria-live="polite">
+          <!-- Populated dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Section (London Invented Address) -->
+    <section class="section location-section" id="ubicacion">
+      <div class="container">
+        <div class="location-grid">
+          <div class="location-info">
+            <span class="section-tag">UBICACIÓN · LONDRES</span>
+            <h2>Encuéntranos bajo el callejón de neón</h2>
+            <p class="location-lead">
+              Escondido entre Berwick Street y Wardour Street, busca el farolillo de neón magenta con el kanji <strong>光線</strong> junto a la puerta de acero negro.
+            </p>
+
+            <div class="address-card">
+              <div class="address-card__row">
+                <div>
+                  <span class="address-label">Dirección (Ficticia)</span>
+                  <address class="address-text" id="londonAddress">
+                    KŌSEN Neon Sushi Bar<br />
+                    42 Electric Lantern Alley, Soho<br />
+                    London W1F 8NX, United Kingdom
+                  </address>
+                </div>
+                <button class="btn btn--ghost btn--sm" id="copyAddressBtn" type="button">Copiar dirección</button>
+              </div>
+
+              <div class="info-columns">
+                <div>
+                  <span class="address-label">Horario</span>
+                  <ul class="hours-list">
+                    <li><span>Mar – Jue</span><strong>18:00 – 23:30</strong></li>
+                    <li><span>Vie – Sáb</span><strong>18:00 – 01:30</strong></li>
+                    <li><span>Domingo</span><strong>17:30 – 22:30</strong></li>
+                    <li><span>Lunes</span><strong>Cerrado</strong></li>
+                  </ul>
+                </div>
+                <div>
+                  <span class="address-label">Metro (London Underground)</span>
+                  <ul class="tube-list">
+                    <li><span class="tube-dot tube-dot--red"></span>Tottenham Court Rd · 4 min</li>
+                    <li><span class="tube-dot tube-dot--blue"></span>Piccadilly Circus · 5 min</li>
+                    <li><span class="tube-dot tube-dot--cyan"></span>Oxford Circus · 6 min</li>
+                  </ul>
+                  <span class="address-label mt-16">Contacto</span>
+                  <p class="contact-detail">+44 20 7946 0821<br />reservations@kosen-neonsushi.example</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Custom Stylized Neon SVG Map of Soho, London -->
+          <div class="neon-map-card" aria-label="Mapa estilizado de Soho, Londres mostrando 42 Electric Lantern Alley">
+            <div class="neon-map-card__header">
+              <span>SOHO SECTOR · W1F 8NX</span>
+              <span class="coords">51.5136° N, 0.1342° W</span>
+            </div>
+            <svg viewBox="0 0 540 420" class="soho-svg" role="img" aria-label="Mapa neón de Soho Londres con la ubicación de KŌSEN en 42 Electric Lantern Alley">
+              <defs>
+                <filter id="glowCyan" x="-30%" y="-30%" width="160%" height="160%">
+                  <feGaussianBlur stdDeviation="3.5" result="blur" />
+                  <feMerge>
+                    <feMergeNode in="blur" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+                <filter id="glowPink" x="-40%" y="-40%" width="180%" height="180%">
+                  <feGaussianBlur stdDeviation="5" result="blur" />
+                  <feMerge>
+                    <feMergeNode in="blur" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+                <pattern id="gridPattern" width="30" height="30" patternUnits="userSpaceOnUse">
+                  <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(0,240,255,0.06)" stroke-width="1" />
+                </pattern>
+              </defs>
+
+              <rect width="540" height="420" fill="#090a14" />
+              <rect width="540" height="420" fill="url(#gridPattern)" />
+
+              <!-- City Blocks -->
+              <g fill="#121428" stroke="rgba(255,255,255,0.06)" stroke-width="1">
+                <rect x="42" y="55" width="110" height="80" rx="4" />
+                <rect x="172" y="55" width="120" height="80" rx="4" />
+                <rect x="314" y="55" width="128" height="80" rx="4" />
+                <rect x="42" y="155" width="110" height="96" rx="4" />
+                <rect x="172" y="155" width="120" height="96" rx="4" />
+                <rect x="314" y="155" width="128" height="96" rx="4" />
+                <rect x="42" y="272" width="145" height="90" rx="4" />
+                <rect x="208" y="272" width="118" height="90" rx="4" />
+                <rect x="348" y="272" width="118" height="90" rx="4" />
+              </g>
+
+              <!-- Major Soho Streets -->
+              <g stroke="#1f2547" stroke-width="12" stroke-linecap="round">
+                <line x1="20" y1="42" x2="520" y2="42" />
+                <line x1="20" y1="145" x2="520" y2="145" />
+                <line x1="20" y1="262" x2="520" y2="262" />
+                <line x1="162" y1="20" x2="162" y2="400" />
+                <line x1="303" y1="20" x2="303" y2="400" />
+                <line x1="454" y1="20" x2="454" y2="400" />
+              </g>
+
+              <!-- Neon Highlighted Alley: Electric Lantern Alley -->
+              <path d="M 162 204 L 303 204" stroke="#00f0ff" stroke-width="4" stroke-dasharray="7 5" filter="url(#glowCyan)" />
+              <line x1="20" y1="42" x2="520" y2="42" stroke="rgba(0,240,255,0.35)" stroke-width="2" />
+              <line x1="303" y1="20" x2="303" y2="400" stroke="rgba(255,42,133,0.35)" stroke-width="2" />
+
+              <!-- Street Labels -->
+              <g fill="#8c95b8" font-family="Space Grotesk, sans-serif" font-size="11" letter-spacing="1.2">
+                <text x="195" y="34">OXFORD STREET</text>
+                <text x="58" y="140">BROADWICK ST</text>
+                <text x="335" y="257">BREWER STREET</text>
+                <text x="150" y="358" transform="rotate(-90 150 358)">BERWICK ST</text>
+                <text x="292" y="365" transform="rotate(-90 292 365)">WARDOUR ST</text>
+                <text x="444" y="355" transform="rotate(-90 444 355)">DEAN ST</text>
+              </g>
+
+              <!-- Alley Label -->
+              <text x="176" y="194" fill="#00f0ff" font-family="Space Grotesk, sans-serif" font-size="10.5" font-weight="700" filter="url(#glowCyan)">
+                ELECTRIC LANTERN ALLEY
+              </text>
+
+              <!-- Tube Stations -->
+              <g font-family="Space Grotesk, sans-serif" font-size="10" fill="#e6ebff">
+                <circle cx="52" cy="42" r="7" fill="#00f0ff" />
+                <text x="66" y="46">Oxford Circus 🚇</text>
+
+                <circle cx="486" cy="42" r="7" fill="#ff3b5c" />
+                <text x="358" y="64">Tottenham Ct Rd 🚇</text>
+
+                <circle cx="242" cy="390" r="7" fill="#4f7cff" />
+                <text x="256" y="394">Piccadilly Circus 🚇</text>
+              </g>
+
+              <!-- KŌSEN Pulsing Pin -->
+              <g transform="translate(238, 204)">
+                <circle r="24" fill="rgba(255,42,133,0.18)" class="map-pulse" />
+                <circle r="13" fill="rgba(255,42,133,0.35)" />
+                <circle r="7" fill="#ff2a85" stroke="#ffffff" stroke-width="2" filter="url(#glowPink)" />
+                <g transform="translate(16, -24)">
+                  <rect x="0" y="0" width="154" height="44" rx="8" fill="#101122" stroke="#ff2a85" stroke-width="1.5" filter="url(#glowPink)" />
+                  <text x="12" y="18" fill="#ffffff" font-family="Syne, sans-serif" font-size="12" font-weight="700">KŌSEN 光線</text>
+                  <text x="12" y="34" fill="#00f0ff" font-family="Space Grotesk, sans-serif" font-size="10">42 Electric Lantern Alley</text>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="section reservation-section" id="reservar">
+      <div class="container">
+        <div class="reservation-box">
+          <div class="reservation-box__intro">
+            <span class="section-tag">RESERVAS · SOHO</span>
+            <h2>Asegura tu asiento en la barra neón</h2>
+            <p>Disponemos de 16 plazas frente al itamae y 6 cabinas privadas con iluminación ambiental regulable. Confirmación instantánea.</p>
+            <ul class="perks-list">
+              <li>✦ Bebida de bienvenida de té frío sencha &amp; yuzu</li>
+              <li>✦ Opciones sin gluten y vegetarianas bajo aviso</li>
+              <li>✦ Cancelación gratuita hasta 4 horas antes</li>
+            </ul>
+          </div>
+
+          <form class="reservation-form" id="reservationForm">
+            <div class="form-row">
+              <label>
+                <span>Nombre completo</span>
+                <input type="text" name="name" required placeholder="Ej. Elena Vance" />
+              </label>
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" required placeholder="elena@ejemplo.com" />
+              </label>
+            </div>
+
+            <div class="form-row form-row--three">
+              <label>
+                <span>Fecha</span>
+                <input type="date" name="date" id="resDate" required />
+              </label>
+              <label>
+                <span>Hora</span>
+                <select name="time" required>
+                  <option value="18:30">18:30</option>
+                  <option value="19:30" selected>19:30</option>
+                  <option value="20:30">20:30</option>
+                  <option value="21:30">21:30</option>
+                  <option value="22:30">22:30</option>
+                  <option value="23:30">23:30 (Late Night)</option>
+                </select>
+              </label>
+              <label>
+                <span>Comensales</span>
+                <select name="guests" required>
+                  <option value="1">1 persona</option>
+                  <option value="2" selected>2 personas</option>
+                  <option value="3">3 personas</option>
+                  <option value="4">4 personas</option>
+                  <option value="6">6 personas</option>
+                  <option value="8">8 personas</option>
+                </select>
+              </label>
+            </div>
+
+            <label>
+              <span>Zona preferida</span>
+              <select name="seating" required>
+                <option value="Barra Omakase Neón">Barra Omakase Neón (Frente al chef)</option>
+                <option value="Cabina Privada Soho">Cabina Privada Soho</option>
+                <option value="Salón Principal">Salón Principal</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Alergias o petición especial (opcional)</span>
+              <textarea name="notes" rows="2" placeholder="Sin sésamo, celebración de aniversario..."></textarea>
+            </label>
+
+            <button type="submit" class="btn btn--primary btn--full">Confirmar reserva en Soho</button>
+          </form>
+        </div>
+
+        <div class="reservation-confirmed" id="reservationConfirmed" hidden>
+          <div class="pass-card">
+            <span class="section-tag">PASE DE RESERVA CONFIRMADO</span>
+            <h3 id="passCode">KSN-0000</h3>
+            <p id="passSummary"></p>
+            <p class="pass-address">📍 42 Electric Lantern Alley, Soho, London W1F 8NX</p>
+            <button type="button" class="btn btn--ghost btn--sm" id="newReservationBtn">Hacer otra reserva</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <div class="brand">
+          <span class="brand__kanji">光線</span>
+          <span class="brand__text">
+            <strong>KŌSEN NEON SUSHI</strong>
+            <small>42 Electric Lantern Alley, Soho, London W1F 8NX</small>
+          </span>
+        </div>
+      </div>
+      <p class="footer__note">Restaurante y dirección imaginarios creados como demostración interactiva. Todos los platos e imágenes han sido generados por IA.</p>
+    </div>
+  </footer>
+
+  <!-- Dish Detail Modal -->
+  <div class="modal" id="dishModal" hidden aria-modal="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__dialog">
+      <button class="modal__close" type="button" data-close-modal aria-label="Cerrar detalle">&times;</button>
+      <div class="modal__media">
+        <img id="modalImg" src="" alt="" />
+        <span class="modal__category" id="modalCategory"></span>
+      </div>
+      <div class="modal__body">
+        <div class="modal__header">
+          <div>
+            <span class="dish-jp" id="modalJp"></span>
+            <h3 id="modalTitle"></h3>
+          </div>
+          <span class="modal__price" id="modalPrice"></span>
+        </div>
+        <p class="modal__desc" id="modalDesc"></p>
+
+        <div class="modal__meta">
+          <div>
+            <h4>Ingredientes clave</h4>
+            <ul id="modalIngredients" class="chip-list"></ul>
+          </div>
+          <div>
+            <h4>Maridaje sugerido</h4>
+            <p id="modalPairing" class="pairing-text"></p>
+          </div>
+          <div>
+            <h4>Etiquetas / Alérgenos</h4>
+            <div id="modalTags" class="tag-row"></div>
+          </div>
+        </div>
+
+        <div class="modal__actions">
+          <button class="btn btn--primary btn--full" id="modalAddBtn" type="button">Añadir a mi comanda</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide-over Cart / Order Drawer -->
+  <aside class="drawer" id="cartDrawer" hidden aria-label="Comanda de platos">
+    <div class="drawer__backdrop" id="closeCartBackdrop"></div>
+    <div class="drawer__panel">
+      <div class="drawer__header">
+        <div>
+          <span class="section-tag">TU COMANDA · KŌSEN</span>
+          <h3>Bandeja de Degustación</h3>
+        </div>
+        <button class="modal__close" id="closeCartBtn" type="button" aria-label="Cerrar comanda">&times;</button>
+      </div>
+
+      <div class="drawer__items" id="cartItems">
+        <!-- Populated dynamically -->
+      </div>
+
+      <div class="drawer__footer" id="cartFooter">
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <strong id="cartSubtotal">£0.00</strong>
+        </div>
+        <div class="summary-row summary-row--muted">
+          <span>Servicio Soho (12.5% opc.)</span>
+          <span id="cartService">£0.00</span>
+        </div>
+        <div class="summary-row summary-row--total">
+          <span>Total estimado</span>
+          <strong id="cartTotal">£0.00</strong>
+        </div>
+        <button class="btn btn--primary btn--full" id="checkoutBtn" type="button">Enviar comanda a cocina</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
